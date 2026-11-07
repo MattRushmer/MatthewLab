@@ -26,3 +26,4 @@ This project is my fresh start: a deliberate, well-planned rebuild so everything
 - Run everything as code with Docker Compose
 
 ## Setup
+I Started Off by Instiall my OS and setting Up my SSH key.
