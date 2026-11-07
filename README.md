@@ -26,4 +26,5 @@ This project is my fresh start: a deliberate, well-planned rebuild so everything
 - Run everything as code with Docker Compose
 
 ## Setup
+<img width="4032" height="3024" alt="IMG_0737" src="https://github.com/user-attachments/assets/b13cbec1-e216-4ccf-911f-07db21b777e8" />
 I Started Off by Instiall my OS and setting Up my SSH key.
