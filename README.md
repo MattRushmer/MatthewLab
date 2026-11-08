@@ -1,4 +1,4 @@
-# 🧪 MatthewLab
+<img width="4032" height="3024" alt="IMG_0737" src="https://github.com/user-attachments/assets/dd159bd7-0fc6-44c0-9134-4640f3cb3878" /># 🧪 MatthewLab
 
 A self-hosted homelab, rebuilt from scratch with a clear purpose.
 
@@ -26,5 +26,19 @@ This project is my fresh start: a deliberate, well-planned rebuild so everything
 - Run everything as code with Docker Compose
 
 ## Setup
-<img width="4032" height="3024" alt="IMG_0737" src="https://github.com/user-attachments/assets/b13cbec1-e216-4ccf-911f-07db21b777e8" />
-I Started Off by Instiall my OS and setting Up my SSH key.
+I Started Off by Install my OS and giving it a static Ip of 192.168.1.50
+<img width="1917" height="935" alt="Screenshot 2026-11-07 125329" src="https://github.com/user-attachments/assets/542f2555-baf6-45aa-ac12-718b9f05662f" />
+<img width="4032" height="3024" alt="IMG_0737" src="https://github.com/user-attachments/assets/d6eef037-5544-4896-88e6-5510000ee7d7" />
+
+I then set up my SSH key so i didn't have to login every time to ssh in.
+<img width="1889" height="990" alt="Screenshot 2026-11-07 162218" src="https://github.com/user-attachments/assets/156b7833-1c95-4dd4-9fb6-b69d3abc3054" />
+
+I then installed docker and Portainer in order to monitor my docker containers and networks. Honestly one of the most useful services i have ever used.
+<img width="1919" height="945" alt="Screenshot 2026-11-07 162741" src="https://github.com/user-attachments/assets/c41f1994-c4bc-46e4-88aa-093d807879cd" />
+
+I then Set Up Authentik to act as my single sign in system.
+<img width="1916" height="936" alt="image" src="https://github.com/user-attachments/assets/4425aba2-6ec2-4cf2-8d36-d37fe1694775" />
+
+Had an issue when trying to setup my Authentik where it wasn't accepting my setup token. By passed by making it read the setup token straight from files and remove it fron the log in process.
+
+
