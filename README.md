@@ -43,3 +43,5 @@ Had an issue when trying to setup my Authentik where it wasn't accepting my setu
 
 I now wanted to set up my reverse proxy manager so i can have nice clean URLs with websites which where safe. 
 <img width="1918" height="995" alt="image" src="https://github.com/user-attachments/assets/48ca065b-26ac-45fe-a71b-eba0dcd0e5fc" />
+<img width="1911" height="942" alt="image" src="https://github.com/user-attachments/assets/ca9e7f41-870f-4571-baed-6f83292fec42" />
+Ive now configured a reverse proxy for Portainer and Authentik. 
