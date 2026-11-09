@@ -41,4 +41,5 @@ I then Set Up Authentik to act as my single sign in system.
 
 Had an issue when trying to setup my Authentik where it wasn't accepting my setup token. By passed by making it read the setup token straight from files and remove it fron the log in process.
 
-
+I now wanted to set up my reverse proxy manager so i can have nice clean URLs with websites which where safe. 
+<img width="1918" height="995" alt="image" src="https://github.com/user-attachments/assets/48ca065b-26ac-45fe-a71b-eba0dcd0e5fc" />
