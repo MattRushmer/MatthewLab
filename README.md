@@ -45,3 +45,142 @@ I now wanted to set up my reverse proxy manager so i can have nice clean URLs wi
 <img width="1918" height="995" alt="image" src="https://github.com/user-attachments/assets/48ca065b-26ac-45fe-a71b-eba0dcd0e5fc" />
 <img width="1911" height="942" alt="image" src="https://github.com/user-attachments/assets/ca9e7f41-870f-4571-baed-6f83292fec42" />
 Ive now configured a reverse proxy for Portainer and Authentik. 
+
+I now want to set up Terraform so I can do IAC. I want to set it up so i can edit and setup services with code.
+This is my project layout:
+terraform {
+  required_providers {
+    docker = {
+      source  = "kreuzwerker/docker"
+      version = "~> 3.6"
+    }
+    authentik = {
+      source  = "goauthentik/authentik"
+      version = "~> 2026.8.0"
+    }
+  }
+}
+EOF
+
+cat > variables.tf <<'EOF'
+variable "server_ip" {
+  type    = string
+  default = "192.168.1.50"
+}
+
+variable "authentik_token" {
+  type      = string
+  sensitive = true
+  default   = ""
+}
+EOF
+
+cat > providers.tf <<'EOF'
+provider "docker" {
+  host = "unix:///var/run/docker.sock"
+}
+EOF
+
+terraform {
+  required_providers {
+    docker = {
+      source = "kreuzwerker/docker"
+    }
+  }
+}
+
+variable "name" {
+  type = string
+}
+
+variable "image" {
+  type = string
+}
+
+variable "port" {
+  type = number
+}
+
+variable "host" {
+  type = string
+}
+
+variable "network" {
+  type = string
+}
+
+variable "env" {
+  type    = map(string)
+  default = {}
+}
+
+variable "volumes" {
+  type    = map(string)
+  default = {}
+}
+
+locals {
+  labels = {
+    "traefik.enable"                                             = "true"
+    "traefik.http.routers.${var.name}.rule"                      = "Host(`${var.host}`)"
+    "traefik.http.routers.${var.name}.entrypoints"               = "web"
+    "traefik.http.services.${var.name}.loadbalancer.server.port" = tostring(var.port)
+  }
+}
+
+resource "docker_image" "this" {
+  name = var.image
+}
+
+resource "docker_volume" "this" {
+  for_each = var.volumes
+  name     = "${var.name}_${each.key}"
+}
+
+resource "docker_container" "this" {
+  name    = var.name
+  image   = docker_image.this.image_id
+  restart = "unless-stopped"
+  env     = [for k, v in var.env : "${k}=${v}"]
+
+  networks_advanced {
+    name = var.network
+  }
+
+  dynamic "labels" {
+    for_each = local.labels
+    content {
+      label = labels.key
+      value = labels.value
+    }
+  }
+
+  dynamic "volumes" {
+    for_each = var.volumes
+    content {
+      volume_name    = docker_volume.this[volumes.key].name
+      container_path = volumes.value
+    }
+  }
+}
+EOF
+
+
+
+data "docker_network" "proxy" {
+  name = "proxy"
+}
+
+module "whoami" {
+  source  = "./modules/web-service"
+  name    = "whoami"
+  image   = "traefik/whoami:latest"
+  port    = 80
+  host    = "whoami.${var.server_ip}.nip.io"
+  network = data.docker_network.proxy.name
+}
+EOF
+
+
+Set Up 
+<img width="641" height="923" alt="image" src="https://github.com/user-attachments/assets/02d2a257-cfa8-4050-bd86-97f4663358c1" />
