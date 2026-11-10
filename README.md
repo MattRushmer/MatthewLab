@@ -184,3 +184,10 @@ EOF
 
 Set Up 
 <img width="641" height="923" alt="image" src="https://github.com/user-attachments/assets/02d2a257-cfa8-4050-bd86-97f4663358c1" />
+
+I now Want to finally install Netbox. This will be my network Manager then I want to configure my athentik as well as configure the CI/CD
+<img width="1914" height="974" alt="image" src="https://github.com/user-attachments/assets/b81999a4-00e7-4822-b722-1a627003f890" />
+<img width="1913" height="868" alt="image" src="https://github.com/user-attachments/assets/992719bf-99c4-422d-8253-2c34eb5bad85" />
+
+
+For this i have decide to use Github Actions for my CI and Argo for my CD. 
