@@ -193,3 +193,10 @@ I now Want to finally install Netbox. This will be my network Manager then I wan
 I've now set um my netbox so I can view and organise my Home lab. currently there is still lots of information to add to this but as my home lab grows i want to add more to it
 
 For this i have decide to use Github Actions for my CI and Argo for my CD. I was goiong to use Jemkins for my Ci but was a bit affraid of it since it seemed alot harder to use so currently im going to stick with GitHub actions. 
+I also want to install Prometheus and Grafana For monitoring so i can make sure all my containers are working as intended
+
+I first started by setting p Netbox, authentik and traefik so i can access there statistics
+<img width="952" height="956" alt="image" src="https://github.com/user-attachments/assets/f440412e-b67c-4cb8-b1f6-f998977f9fdc" />
+<img width="1911" height="930" alt="image" src="https://github.com/user-attachments/assets/98f1da93-42c5-411a-8318-7263bbdecd38" />
+<img width="1918" height="937" alt="image" src="https://github.com/user-attachments/assets/3730a068-134f-433a-85f2-7b30db949254" />
+
