@@ -188,6 +188,8 @@ Set Up
 I now Want to finally install Netbox. This will be my network Manager then I want to configure my athentik as well as configure the CI/CD
 <img width="1914" height="974" alt="image" src="https://github.com/user-attachments/assets/b81999a4-00e7-4822-b722-1a627003f890" />
 <img width="1913" height="868" alt="image" src="https://github.com/user-attachments/assets/992719bf-99c4-422d-8253-2c34eb5bad85" />
+<img width="1915" height="951" alt="image" src="https://github.com/user-attachments/assets/b02b8473-7ba1-4fc3-9ba0-7729bf986859" />
 
+I've now set um my netbox so I can view and organise my Home lab. currently there is still lots of information to add to this but as my home lab grows i want to add more to it
 
-For this i have decide to use Github Actions for my CI and Argo for my CD. 
+For this i have decide to use Github Actions for my CI and Argo for my CD. I was goiong to use Jemkins for my Ci but was a bit affraid of it since it seemed alot harder to use so currently im going to stick with GitHub actions. 
