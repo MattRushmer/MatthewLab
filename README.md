@@ -200,3 +200,4 @@ I first started by setting p Netbox, authentik and traefik so i can access there
 <img width="1911" height="930" alt="image" src="https://github.com/user-attachments/assets/98f1da93-42c5-411a-8318-7263bbdecd38" />
 <img width="1918" height="937" alt="image" src="https://github.com/user-attachments/assets/3730a068-134f-433a-85f2-7b30db949254" />
 
+No i want to deploy ELK stack. Once i have all these monitoring and admin service running i want to use github actions and Argo inorder to set up my Pipeline. For this ill be using terraform which i installed earlier.
