@@ -201,3 +201,12 @@ I first started by setting p Netbox, authentik and traefik so i can access there
 <img width="1918" height="937" alt="image" src="https://github.com/user-attachments/assets/3730a068-134f-433a-85f2-7b30db949254" />
 
 No i want to deploy ELK stack. Once i have all these monitoring and admin service running i want to use github actions and Argo inorder to set up my Pipeline. For this ill be using terraform which i installed earlier.
+<img width="1108" height="530" alt="image" src="https://github.com/user-attachments/assets/0c2f5c5e-19d0-41c3-8187-63bbcc9f4acf" />
+<img width="1434" height="827" alt="image" src="https://github.com/user-attachments/assets/84b48ed9-0cc2-46b2-b875-cd563e83fd47" />
+
+Had an issue where i didnt configure my storage right so the disk i was installing on was only 16gb ion size. had to change the colume size now i have 250g.
+<img width="738" height="404" alt="image" src="https://github.com/user-attachments/assets/ae35f8b5-691b-49fd-b161-71148748515b" />
+My cpu was to old for the version of file beat i was using so i had to revert to an older version
+
+
+
