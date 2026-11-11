@@ -208,5 +208,6 @@ Had an issue where i didnt configure my storage right so the disk i was installi
 <img width="738" height="404" alt="image" src="https://github.com/user-attachments/assets/ae35f8b5-691b-49fd-b161-71148748515b" />
 My cpu was to old for the version of file beat i was using so i had to revert to an older version
 
-
+<img width="1448" height="272" alt="image" src="https://github.com/user-attachments/assets/94ba6550-d632-415d-a9ea-dc7c1b7469e5" />
+<img width="1904" height="913" alt="image" src="https://github.com/user-attachments/assets/e114095f-258a-4b72-a6a7-9299a1869f13" />
 
