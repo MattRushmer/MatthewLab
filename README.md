@@ -213,4 +213,5 @@ My cpu was to old for the version of file beat i was using so i had to revert to
 <img width="1448" height="272" alt="image" src="https://github.com/user-attachments/assets/94ba6550-d632-415d-a9ea-dc7c1b7469e5" />
 <img width="1904" height="913" alt="image" src="https://github.com/user-attachments/assets/e114095f-258a-4b72-a6a7-9299a1869f13" />
 
-
+<img width="861" height="488" alt="image" src="https://github.com/user-attachments/assets/534299a0-9fcb-407e-8ad5-eff178450454" />
+i set it up so i can close the lid and it keeps running
