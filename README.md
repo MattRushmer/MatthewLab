@@ -215,3 +215,11 @@ My cpu was to old for the version of file beat i was using so i had to revert to
 
 <img width="861" height="488" alt="image" src="https://github.com/user-attachments/assets/534299a0-9fcb-407e-8ad5-eff178450454" />
 i set it up so i can close the lid and it keeps running
+
+I want to set up https so i can log in from outside the network
+<img width="861" height="488" alt="Screenshot 2026-11-15 134353" src="https://github.com/user-attachments/assets/f2dd0d3f-4169-435e-b541-60a8c78383d4" />
+<img width="1919" height="1034" alt="Screenshot 2026-11-16 174143" src="https://github.com/user-attachments/assets/8ac1eb6e-59e3-4d63-ac84-954128315db0" />
+the proxy is set up it now just needs the cert
+<img width="611" height="161" alt="Screenshot 2026-11-16 174739" src="https://github.com/user-attachments/assets/76a8caaa-91d2-4fca-b968-174336fe5df3" />
+I now jsut need to install the cert on my device and this should work
+<img width="475" height="208" alt="image" src="https://github.com/user-attachments/assets/38eaf7d1-c252-4ba9-ba1f-37d013b5ee77" />
